@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sandboXP-</title>
+    <meta
+      name="description"
+      content="sandboXP- is a sandbox experience for rapid experimentation, creative prototyping, and playful product exploration."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-mark">XP</div>
+          <div class="brand-copy">
+            <span class="brand-name">sandboXP-</span>
+            <span class="brand-tag">prototype lab</span>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#features">Features</a>
+          <a href="#workspace">Workspace</a>
+          <a href="#insights">Insights</a>
+        </nav>
+
+        <button class="primary-button" type="button">Launch build</button>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">creative sandbox</p>
+            <h1>Build faster. Test smarter. Ship brighter.</h1>
+            <p class="subtitle">
+              sandboXP- gives teams a playful environment to explore ideas, iterate
+              quickly, and turn raw concepts into working experiences.
+            </p>
+
+            <div class="hero-actions">
+              <button class="primary-button" type="button">Create session</button>
+              <button class="secondary-button" type="button">View demo</button>
+            </div>
+
+            <ul class="hero-metrics" aria-label="Key statistics">
+              <li>
+                <strong>12k</strong>
+                <span>experiments</span>
+              </li>
+              <li>
+                <strong>4.9/5</strong>
+                <span>team rating</span>
+              </li>
+              <li>
+                <strong>18 min</strong>
+                <span>avg. iteration</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="hero-panel" id="workspace" aria-label="Sandbox dashboard preview">
+            <div class="panel-header">
+              <div>
+                <span class="status-dot"></span>
+                <span>System online</span>
+              </div>
+              <span class="panel-pill" id="live-time">live</span>
+            </div>
+
+            <div class="signal-card">
+              <div class="signal-header">
+                <span>Active session</span>
+                <span class="mini-tag">v2.4</span>
+              </div>
+              <h2>UI playground</h2>
+              <div class="progress-wrap" aria-label="Progress bar">
+                <div class="progress-bar"></div>
+              </div>
+              <div class="signal-meta">
+                <span>92% ready</span>
+                <span>3 assets synced</span>
+              </div>
+            </div>
+
+            <div class="mini-grid">
+              <article class="mini-stat">
+                <span class="mini-label">Latency</span>
+                <strong>48ms</strong>
+              </article>
+              <article class="mini-stat">
+                <span class="mini-label">Deploys</span>
+                <strong>17</strong>
+              </article>
+              <article class="mini-stat">
+                <span class="mini-label">Feedback</span>
+                <strong>+26%</strong>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section class="features" id="features">
+          <div class="section-heading">
+            <p class="eyebrow">why sandboXP-</p>
+            <h2>Made for momentum.</h2>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card">
+              <div class="icon">⚡</div>
+              <h3>Fast ideation</h3>
+              <p>
+                Jump from a raw thought to a living prototype in minutes with a low-friction workflow.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">🧪</div>
+              <h3>Safe experiments</h3>
+              <p>
+                Test new ideas in isolated spaces without disrupting the main product experience.
+              </p>
+            </article>
+
+            <article class="feature-card">
+              <div class="icon">📦</div>
+              <h3>Reusable patterns</h3>
+              <p>
+                Capture your best building blocks and turn them into repeatable system components.
+              </p>
+            </article>
+          </div>
+        </section>
+
+        <section class="insights" id="insights">
+          <div class="section-heading left">
+            <p class="eyebrow">workspace</p>
+            <h2>Turn curiosity into action.</h2>
+          </div>
+
+          <div class="insight-layout">
+            <div class="action-panel">
+              <label class="input-label" for="session-name">Session name</label>
+              <input id="session-name" type="text" value="Prototype runway" />
+
+              <label class="input-label" for="session-focus">Focus mode</label>
+              <select id="session-focus">
+                <option>Design systems</option>
+                <option>Product research</option>
+                <option>UX exploration</option>
+                <option>Rapid prototyping</option>
+              </select>
+
+              <button class="primary-button block" id="generate-button" type="button">Generate plan</button>
+            </div>
+
+            <div class="output-panel" aria-live="polite">
+              <div class="output-header">
+                <span>Recommended flow</span>
+                <span class="mini-tag" id="session-tag">starter</span>
+              </div>
+              <ul id="output-list">
+                <li>Define the user problem and desired outcome.</li>
+                <li>Build a low-fidelity sandbox interaction.</li>
+                <li>Collect signal, refine, and validate the motion.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
